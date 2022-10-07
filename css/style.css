@@ -1,0 +1,156 @@
+:root {
+  --red: hsl(0, 100%, 68%);
+  --very-dark-blue: hsl(230, 29%, 20%);
+  --dark-grayish-blue: hsl(230, 11%, 40%);
+  --grayish-blue: hsl(231, 7%, 65%);
+  --light-grayish-blue: hsl(207, 33%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+main {
+  max-width: 1440px;
+  overflow: hidden;
+}
+
+.wrapper {
+  padding-inline: 8%;
+}
+
+.navbar {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--very-dark-blue);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.login {
+  margin-left: 40px;
+  text-decoration: none;
+  color: var(--grayish-blue);
+}
+
+nav {
+  display: none;
+}
+
+.bg {
+  height: 450px;
+  width: 50%;
+  background-color: var(--light-grayish-blue);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 0 0 0 60px;
+}
+
+.col-right img {
+  width: 600px;
+}
+
+.col-right, .col-left {
+  margin-top: 40px;
+}
+
+.container {
+  padding-left: 8%;
+  margin-bottom: 50px;
+}
+
+.new {
+  color: var(--light-grayish-blue);
+  padding: 3px 10px;
+  background-color: var(--very-dark-blue);
+  font-weight: 700;
+  border-radius: 18px;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+
+.text {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--grayish-blue);
+  display: inline-block;
+}
+
+h1 {
+  color: var(--very-dark-blue);
+  margin: 15px 0;
+  line-height: 1.2;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.pg {
+  color: var(--dark-grayish-blue);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 320px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--light-grayish-blue);
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  background-color: var(--red);
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+@media (min-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .col-right, .col-left {
+    flex-basis: 50%;
+  }
+
+  .col-right img {
+    width: 140%;
+  }
+
+  nav {
+    display: block;
+  }
+  .icon {
+    display: none;
+  }
+}
